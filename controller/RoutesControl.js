@@ -31,38 +31,6 @@ export const getUserFun = async (req, reply) => {
   }
 };
 export const getUsersFun = async (req, reply) => {
-  // try {
-  //   const { completed, createdby, dateofcreation, dateofcompletion } =
-  //     req.query;
-
-  //   const where = {};
-  //   if (completed !== undefined) {
-  //     where.completed = completed === "true";
-  //   }
-  //   if (createdby !== undefined) {
-  //     where.createdby = createdby;
-  //   }
-  //   if (dateofcreation !== undefined) {
-  //     where.dateofcreation = new Date(dateofcreation);
-
-  //   }
-  //   if (dateofcompletion !== undefined) {
-  //     where.dateofcompletion = new Date(dateofcompletion);
-  //   }
-
-  //   const filteredResult = await prisma.users.findMany({
-  //     where,
-  //   });
-  //   const completedValue = filteredResult.filter(
-  //     (user) => user.completed
-  //   ).length;
-  //   const notcompletedValue = filteredResult.filter(
-  //     (user) => !user.completed
-  //   ).length;
-
-  //   reply.code(200).send({ filteredResult, completedValue, notcompletedValue });
-  // }
-
   try {
     const {
       completed,
