@@ -1,0 +1,30 @@
+{
+  "name": "basil-assignment",
+  "version": "1.0.0",
+  "description": "\"Assignment\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "dev": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "Kapil Chauhan",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/mongodb": "^8.0.0",
+    "@fastify/swagger": "^8.10.0",
+    "@prisma/client": "^5.2.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.22.2",
+    "fastify-zod": "^1.4.0",
+    "moment": "^2.29.4",
+    "nodemon": "^3.0.1",
+    "swagger-jsdoc": "^6.2.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.15",
+    "@babel/node": "^7.22.15",
+    "@babel/preset-env": "^7.22.15"
+  }
+}
